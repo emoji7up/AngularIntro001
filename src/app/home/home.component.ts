@@ -4,9 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   template: `
     <section>
       <form>
@@ -14,14 +12,13 @@ import { CommonModule } from '@angular/common';
         <button class="primary" type="button">Search</button>
       </form>
     </section>
+    <section class="results">
+      <app-housing-location></app-housing-location>
+    </section>
   `,
   styleUrls: ['./home.component.css'],
 })
-
-export class HomeComponent {
-
-}
-
+export class HomeComponent {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
