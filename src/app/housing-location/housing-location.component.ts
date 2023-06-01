@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
-  imports: [CommonModule, HousingLocationComponent],
+  imports: [CommonModule],
   template: `
     <p>
       housing-location works!
