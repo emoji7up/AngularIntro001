@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { HousingLocation } from '../housinglocation';
 
 @Component({
   selector: 'app-home',
@@ -19,10 +20,15 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
   `,
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent {}
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+export class HomeComponent {
+  housingLocation: HousingLocation = {
+    id: 9999,
+    name: 'Test Home',
+    city: 'Test city',
+    state: 'ST',
+    photo: 'assets/example-house.jpg',
+    availableUnits: 99,
+    wifi: true,
+    laundry: false,
+  };
+}
